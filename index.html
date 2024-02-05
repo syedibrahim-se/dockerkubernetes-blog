@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ai-Master.live</title>
+</head>
+<body>
+
+    
+
+    <section class="navigation-bar">
+  
+        <nav>
+
+            <div class="nav-flex">
+                <div>
+                    <img src="./images/aimaster-logo.jpg" alt="" width="60px">
+                </div>
+
+                <div>
+                    <h1 class="txt-logo">Aimaster.Live</h1>
+                </div>
+
+                <div class="search-container">
+                    <form action="">
+                      <input type="text" placeholder="Search..." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+<div>
+
+<div class="dropdown">
+    <button class="drop-btn"><a href=""><img src="./images/user.png" alt=""  width="25"></a></button>
+    <div class="dropdown-content">
+      <p class="content1">Get started on AI.Master.Live</p>
+     <button class="btn3">Sign up</button> <br>
+      <button class="btn4">Sign in</button>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+</nav>
+
+</section>
+
+
+    <!--section one-->
+
+    <section class="one container">
+
+        <div>
+            <h1 class="txt-1">How to Install Docker and Kubernetes</h1>
+        </div>
+
+        <div class="flex-one">
+            <div>
+                <img src="./images/aimaster-logo.jpg" alt="" width="70px">
+            </div>
+          <div>
+            <div class="flex-one">
+                <div>
+                    <p class="txt-2">AiMaster.live</p>
+                </div>
+
+                <div>
+                    <p class="txt-3">follow</p>
+                </div>
+            </div>
+            <div class="flex-one1">
+                <div>
+                    <p class="txt-2"><b style="color:grey">Published By -</b> AIMaster.live </p>
+                </div>
+
+                <div>
+                    <p class="txt-3">5min</p>
+                </div>
+            </div>
+          </div>
+        </div>
+       <br>
+        <hr>
+
+            <div class="flex-one2">
+                <div>
+                    <img src="./images/icon1.png" alt="" width="20">                    
+                </div>
+
+                <div>
+                    <img src="./images/play-button.png" alt="" width="22">                    
+                </div>
+
+                <div>
+                    <img src="./images/icon3.png" alt="" width="25">                    
+                </div>
+                
+            </div>
+        <hr>
+    </section>
+
+   <!--section two-->
+   <div class="d-k container">
+    <img src="./images/docker&kuber.png" width="100%" height="300px">
+ </div>
+
+    <section class="two container">
+<div>
+	<div class="spc">
+        <h2><b>Install Kubernates:</b></h2>
+<p class="p2">If you’re a developer or IT professional looking to test and deploy Kubernetes applications, learn how to install Minikube on RHEL9 or CentOS9 with this step-by-step guide.</p>
+    </div>
+
+<div class="spc">
+    <h2><b>Introduction:</b></h2>
+<p class="p2"> Minikube is an open-source tool that allows you to run Kubernetes clusters on your local machine. It is used for testing, development, and deployment of Kubernetes applications. Red Hat Enterprise Linux 9 (RHEL9) and CentOS 9 are the latest versions of the popular Linux distributions. In this article, we will guide you through the process of installing Minikube on RHEL9 or CentOS9. We will also cover the prerequisites and the installation steps in detail..
+This allows developers to create websites that are interactive and dynamic.</p>
+</div>
+
+<div class="spc">
+    <h2>Follow Steps to Install Docer and Kubernetes:</h2>
+<p class="p1"><strong>Step-1:</strong> first we have to download and add docker repositry by using below command.</p>
+<div class="spn-3"> 
+    <p class="pc">$ sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</p>
+</div>
+
+    <p class="p1"><strong>Step-2: </strong>After cloning repo we have to install the docker repo by using below command.</p>
+    <div class="spn-3"> 
+        <p>$ sudo dnf install docker-ce --nobest -y</p>
+    </div>
+
+    <p class="p1"><strong>Step-3:</strong> After that we want to start the docker engin by using a below command.</p>
+    <div class="spn-3"> 
+        <p>$ sudo systemctl start docker</p>
+    </div>
+
+    <p class="p1"><strong>Step-4:</strong> We want to enable the docker engine by using below command.</p>
+    <div class="spn-3"> 
+        <p >$ sudo systemctl enable docker</p>
+    </div>
+
+    <p class="p1"><strong>Step-5:</strong> Here check the docker engine working running or not by using below command.</p>
+    <div class="spn-3"> 
+        <p>$ sudo systemctl status docker</p>
+    </div>
+    <p class="p2">If showing active and running then it is successful.</p>
+
+
+    <p class="p1"><strong>Step-6:</strong> After successfully running docker engine.Now we can install kubernetes by downloading the kubernetes repo.</p>
+    <div class="spn-3"> 
+        <p class="pc">$ sudo curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"</p>
+    </div>
+
+    <p class="p1"><strong>Step-7:</strong> After downloading the repo we have to install kubernetes by using repo by using .</p>
+    <div class="spn-3"> 
+        <p>$ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl</p>
+    </div>
+
+    <p class="p1"><strong>Step-8:</strong> Now here check the version of the kubernetes by using a below command.</p>
+    <div class="spn-3"> 
+        <p>$ kubectl version --output=yaml</p>
+    </div>
+
+    <p class="p1"><strong>Step-9:</strong> After successfully completed kubernetes installation then we have to install minikube by downloading the repo using below command.</p>
+    <div class="spn-3"> 
+        <p class="pc">$ sudo curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64</p>
+    </div>
+
+    <p class="p1"><strong>Step-10:</strong> Here i am changing the execute permission to downloade a repo file by using below command.</p>
+    <div class="spn-3"> 
+        <p>$ sudo chmod +x minikube-linux-amd64</p>
+    </div>
+
+    <p class="p1"><strong>Step-11:</strong> Moving the file home directory to usr/local directory using below command.</p>
+    <div class="spn-3"> 
+        <p>$ sudo mv minikube-linux-amd64 /usr/local/bin/minikube</p>
+    </div>
+
+    <p class="p1"><strong>Step-12:</strong> Starting the minikube using below command.</p>
+    <div class="spn-3"> 
+        <p>$ minikube start</p>
+    </div>
+
+    <p class="p1"><strong>Step-13:</strong> checking the kubernetes cluster info by using below command.</p>
+    <div class="spn-3"> 
+        <p>$ kubectl cluster-info</p>
+    </div>
+
+    <p class="p1"><strong>Step-14:</strong> To see the minikube dashboard info use below command.</p>
+    <div class="spn-3"> 
+        <p>$ minikube dashboard</p>
+    </div>
+
+    <p class="p1"><strong>Step-15:</strong> After seeing the minikube dashboard info we want to give access to the given port in our local command prompt by using below command.</p>
+    <div class="spn-3"> 
+        <p>$ ssh -L portnumber:localhost:portnumber instancename@ipaddress</p>
+    </div>
+    <p class="p2"><strong>Ex: ssh -L 42157:localhost:42157 aimaster@183.83.218.142</strong></p>
+
+    <p class="p1"><strong>Step-16:</strong> After that open server terminal and copy the given dashboard link and past it on the web browser we can get kubernetes dashboard.</p>
+    
+    <p class="pc"><strong>Ex:</strong> http://127.0.0.1:42157/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/</p>
+    
+
+   
+</div>
+
+
+
+</div>	
+    </section>
+
+
+    <!--section recomended-->
+
+
+    <section class="recomended container">
+        <div>
+            <h1 class="txt-4">Recommended</h1>
+        </div>
+
+        <div class="flex-rem">
+
+            <div class="card">
+                <a href=""><img src="./images/js.jpg" alt="" height="100%" width="100%"></a>
+                <div class="card-txt">
+                    <h4 class="txt-5"><a href="">Javascript For Beginners learn it from scrap</a></h4>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href=""><img src="./images/html.jpg" alt="" height="100%" width="100%"></a>
+                <div class="card-txt">
+                    <h4 class="txt-5"><a href="">Learn Easy Html in Just One Week by aimaster</a></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-rem">
+
+            <div class="card">
+                <a href=""><img src="./images/node.jpg" alt="" height="100%" width="100%"></a>
+                <div class="card-txt">
+                    <h4 class="txt-5"><a href="">Let's learn Node js with aimaster live</a></h4>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href=""><img src="./images/react.jpg" alt="" height="100%" width="100%"></a>
+                <div class="card-txt">
+                    <h4 class="txt-5"><a href="">learn concepts of react js by aimaster</a></h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex-rem">
+
+            <div class="card">
+                <a href=""><img src="./images/ib.jpg" alt="" height="100%" width="100%"></a>
+                <h4 class="txt-5"><a href="">Click here to learn about Bootstrap by aimaster</a></h4>
+            </div>
+
+            <div class="card">
+                <a href=""><img src="./images/icss.jpg" alt="" height="100%" width="100%"></a>
+                <h4 class="txt-5"><a href="">learn basics of Css with aimaster to design amazing webpages</a></h4>
+            </div>
+
+        </div>
+
+                <hr><br>
+<p class="txt-6" style="text-align: center;margin-bottom: 10px;"><strong>Copyright &copy; 2023 powered by Aimaster.Live
+<br>
+</strong></p>
+
+    </section>
+
+</body>
+</html>
